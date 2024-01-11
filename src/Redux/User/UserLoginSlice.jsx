@@ -26,13 +26,13 @@ export const UserSilce = createSlice({
     initialState:{
         userData : null,
         isLoading: false,
-        error:null
+        error:null,
 
     },
     reducers:{
         setUser:(state , action) =>{
             state.userData=action.payload;
-            }
+        }
     },
     extraReducers: (builder) => {
         builder.addCase(signupUser.pending, (state) => {

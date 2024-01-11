@@ -1,0 +1,23 @@
+.btn-body{
+    height: 80px;
+    width: 80px;
+    border-radius: 15px;
+    color: #F8D9C0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px auto;
+    transition: all 0.2s ease;
+    /* background-color: rgb(216, 209, 204,0.1); */
+
+}
+.btn-body:hover{
+    color: white;
+    /* transform: scale(1.04); */
+}
+.btn-body.active{
+    background-color: rgb(216, 209, 204, 0.5);
+    color: white;
+    transform: scale(1.08);
+}

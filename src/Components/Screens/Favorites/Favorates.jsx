@@ -2,7 +2,7 @@ import React from 'react'
 
 function Favorates() {
   return (
-    <div>Favorates</div>
+    <div className='screen-container'>Favorates</div>
   )
 }
 
