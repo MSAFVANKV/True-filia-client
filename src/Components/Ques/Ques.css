@@ -1,0 +1,77 @@
+.queue-Container{
+    width: 100%;
+    height: 35%;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    background-color: #3e61d2;
+    background-image: repeating-radial-gradient(
+        circle at 0 0,
+        transparent 0,
+        #3e61d2 40px
+    ),
+    repeating-linear-gradient(#4767d055, #4767de);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.queue {
+    height: 85%;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .upNext {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: left;
+    margin: 10px 0px;
+  }
+
+  .queue-list {
+    height: 80%;
+    width: 100%;
+    overflow-y: auto;
+  }
+
+.queue-item{
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px 0px ;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.queue-item p {
+    margin: 0px;
+}
+.queue-item:hover{
+    transform: scale(0.98);
+}
+
+  .track-name{
+    width: 75%;
+    text-overflow: ellipsis;
+  }
+  /* Ques.css */
+/* Add any additional styling you need for your component */
+/* .queue-list {
+    scrollbar-width: thin;
+  }
+  
+  .queue-list::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  .queue-list::-webkit-scrollbar-thumb {
+    background-color: #4f4f4f;
+  }
+  
+  .queue-list::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+   */

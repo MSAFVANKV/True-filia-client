@@ -10,9 +10,15 @@ function SidebarButton(props) {
     const isActive = location.pathname === props.to;
 
     const btnClass = isActive ? "btn-body active" : "btn-body"
+
+    const handleLogout = () => {
+      // Remove token from local storage
+      window.localStorage.removeItem("token");
+      // navigate("/login"); 
+  };
   return (
     <Link to={props.to} className="no-underline">
-      <div className={btnClass}>
+      <div className={btnClass} onClick={handleLogout}>
       <IconContext.Provider value={{ size: '23px', className: 'btn-icon' }}>
           {props.icon}
           <p className="  font-thin text-[12px] mt-1">{props.title}</p>

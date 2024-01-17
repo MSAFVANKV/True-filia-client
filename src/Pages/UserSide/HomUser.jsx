@@ -8,9 +8,9 @@ function HomeUser() {
   
 
   return (
-    <>
-    <Library/>
-    </>
+      <div className="main-body">
+      <Library/>
+      </div>
   );
 }
 

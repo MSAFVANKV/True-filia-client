@@ -3,9 +3,11 @@ import { APIkit } from '../../../Spotify';
 import { IconContext } from "react-icons";
 import { AiFillPlayCircle } from "react-icons/ai";
 import "./Library.css";
+import { useNavigate } from 'react-router-dom';
 
 function Library() {
   const [playlists, setPlaylists] = useState([]);
+  const navigate = useNavigate()
 
   useEffect(() => {
     // Function to fetch user's playlists
@@ -23,13 +25,17 @@ function Library() {
     // Call the fetchPlaylists function
     fetchPlaylists();
   }, []);
+
+  const playPlaylist = (id) => {
+    navigate('/player', { state:{id:id}})
+  }
   
   return (
     <div className="screen-container">
     <div className="library-body">
       {playlists?.map((playlist) => (
         <div
-          className="playlist-card"
+          className="playlist-card no-scroll"
           key={playlist.id}
           onClick={() => playPlaylist(playlist.id)}
         >

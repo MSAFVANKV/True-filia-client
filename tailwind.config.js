@@ -9,8 +9,14 @@ export default {
       fontFamily:{
         comforter:['Comforter Brush', 'cursive'],
         comforter2:['Edu TAS Beginner', 'cursive']
-      }
+      },
+      screens: {
+        // 'no-scroll': {'raw': '(max-height: 100vh)'},
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-no-scrollbar'),
+    require('tailwind-scrollbar'),
+  ],
 }
